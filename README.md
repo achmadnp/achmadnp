@@ -18,19 +18,20 @@ I build things end to end — from the API layer down to the deployment pipeline
 
 - 🎓 **B.Sc. Wirtschaftsinformatik** (Business Information Systems) at Technische Hochschule Mittelhessen
 - 💼 Former **Fullstack Developer Intern @ Robert Bosch GmbH** — Angular, .NET, NestJS, PostgreSQL, Azure
-- 🛠️ Freelance web development with React, Next.js, Go and AWS
+- 🛠️ Freelance web development with Next.js, Angular, Go and SQL and NoSQL Databases
 - 🌏 Indonesian roots, German base — I work in **English and German**
 - 🔭 Currently building multi-tenant SaaS side projects and deepening my Go + cloud infrastructure skills
-- 🌱 Learning: **AWS (SAA-C03 track)**, Kubernetes and Terraform, and distributed system patterns
-- 💬 Ask me about: Go backends, Next.js App Router, Docker & CI/CD pipelines
+- 🌱 Learning: **AWS (SAA-C03 track)**, Kubernetes, and distributed system patterns
+- 💬 Ask me about: Fullstack Developments, System Design, Docker & CI/CD pipelines
 
 ---
 
-<h2>Domain of interests</h2>
+<h2>Domain of Interests</h2>
     
 - 💻 Full-stack Web Development
 - 📱 Mobile Development
-- Cloud and DevOps
+- ☁️ Cloud and DevOps
+- ⚙️ Automation
 
 <h2>Languages & Tools</h2>
 <p align="center">
