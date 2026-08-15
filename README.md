@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">Hi, I'm Achmad Naufal Prayitno 👋</h1>
 
-## Getting Started
+<p align="center">
+  <b>Fullstack Developer</b> · Business Information Systems (B.Sc.) · Based in Germany 🇩🇪
+</p>
 
-First, run the development server:
+<p align="center">
+  <a href="https://achmadnp.me"><img src="https://img.shields.io/badge/Website-achmadnp.me-000000?style=flat-square&logo=vercel&logoColor=white" alt="Website"></a>
+  <a href="https://www.linkedin.com/in/achmad-naufal-prayitno/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:anaufalnp@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### About me
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I build things end to end — from the API layer down to the deployment pipeline.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 🎓 **B.Sc. Wirtschaftsinformatik** (Business Information Systems) at Technische Hochschule Mittelhessen
+- 💼 Former **Fullstack Developer Intern @ Robert Bosch GmbH** — Angular, .NET, NestJS, PostgreSQL, Azure
+- 🛠️ Freelance web development with React, Next.js, Go and AWS
+- 🌏 Indonesian roots, German base — I work in **English and German**
+- 🔭 Currently building multi-tenant SaaS side projects and deepening my Go + cloud infrastructure skills
+- 🌱 Learning: **AWS (SAA-C03 track)**, Kubernetes and Terraform, and distributed system patterns
+- 💬 Ask me about: Go backends, Next.js App Router, Docker & CI/CD pipelines
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+<h2>Domain of interests</h2>
+    
+- 💻 Full-stack Web Development
+- 📱 Mobile Development
+- Cloud and DevOps
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<h2>Languages & Tools</h2>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,nodejs,go,cs,java,dart,postgresql,mysql,mongodb" alt="programming languages" />
+</p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,nextjs,angular,expressjs,spring,flutter,prisma,redux,vitest,sass,tailwind" alt="frameworks" />
+</p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=docker,git,azure,aws,vscode,figma" alt="tools" />
+</p>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Featured projects
 
-## Deploy on Vercel
+| Project                                                  | What it is                                                                                                   | Stack          |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | -------------- |
+| **[chamelleon](https://github.com/achmadnp/chamelleon)** | An all-in-one local media shapeshifter — convert and transform media without uploading anything to a server. | TypeScript, Go |
+| **[peroot](https://github.com/achmadnp/peroot)**         | A lightweight messaging bridge connecting an online shop to WhatsApp Business.                               | Go             |
+| **[rearmoured](https://rearmoured.achmadnp.me)**         | My personal site and portfolio. Currently a work in progress.                                                | Next.js        |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### GitHub stats
+
+<p align="center">
+  <a href="https://git.io/awesome-stats-card"><img width="48%" src="https://awesome-github-stats.azurewebsites.net/user-stats/achmadnp?cardType=level&theme=radical&fontFamily=&preferLogin=false" alt="My Awesome Stats" /></a>
+  <a href="https://git.io/streak-stats"><img width="48%" src="https://github-readme-streak-stats-kv.vercel.app?user=achmadnp&theme=radical" alt="GitHub Streak" /></a>
+</p>
+
+<p align="center">
+  <img width="48%" src="https://github-readme-stats-kv.vercel.app/api/top-langs?username=achmadnp&show_icons=true&theme=radical&locale=en&layout=compact&hide_border=true" alt="Top Languages" />
+</p>
+
+---
+
+### Let's connect
+
+I'm open to junior fullstack, frontend and cloud/DevOps roles in — and always happy to talk about current tech or infrastructure.
+
+📫 **[anaufalnp@gmail.com](mailto:YOUR-EMAIL@example.com)** · 🌐 **[achmadnp.me](https://achmadnp.me)**
