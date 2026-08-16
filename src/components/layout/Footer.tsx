@@ -8,7 +8,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex flex-col items-center md:items-start">
             <Link href="/" className="text-xl font-bold tracking-tighter">
-              V.
+              A.
             </Link>
             <p className="text-sm text-muted-foreground mt-2">
               Building visually pleasing interfaces for the web.
