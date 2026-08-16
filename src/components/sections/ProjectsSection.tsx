@@ -3,7 +3,7 @@
 import * as React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ExternalLink, Globe, Wrench, Puzzle } from "lucide-react";
+import { ExternalLink, Globe, Wrench, Puzzle, Computer } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -13,19 +13,20 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-type ProjectType = "web" | "tools" | "plugins";
+type ProjectType = "web" | "tools" | "plugins" | "desktop";
 
 const typeIcons: Record<ProjectType, React.ElementType> = {
   web: Globe,
   tools: Wrench,
   plugins: Puzzle,
+  desktop: Computer,
 };
 
 type Project = {
   title: string;
   description: string;
-  type: ProjectType;
-  image: string;
+  type: ProjectType[];
+  image: string | null;
   tech: string[];
   link: string;
   featured: boolean;
@@ -33,71 +34,81 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "PsyConnect",
-    description: "A thoughtfully designed mental health platform.",
-    type: "web",
-    image: "/projects/psyconnect.png",
+    title: "Chameleon",
+    description: "An All-in-one Local Media Shapeshifter",
+    type: ["desktop"],
+    image: "/projects/chamelleon_logo.png",
     tech: [
-      "Next.js 14",
+      "Go",
+      "React",
       "TypeScript",
+      "Vite",
+      "NodeJS",
+      "Wails v2",
       "TailwindCSS",
-      "ShadCN",
-      "Framer Motion",
+      "Shadcn UI",
+      "FFMPEG",
     ],
-    link: "https://psyconnect.co.in/",
+    link: "https://github.com/achmadnp/chamelleon",
     featured: true,
   },
   {
-    title: "GetLifeGuard",
-    description: "An E-Commerce platform for Self-Defense Keychain.",
-    type: "web",
-    image: "/projects/getlifeguard.png",
-    tech: [
-      "NextJs 14",
-      "TypeScript",
-      "TailwindCSS",
-      "ShadCN",
-      "Prisma",
-      "Stripe",
-    ],
-    link: "https://getlifegard.vercel.app/",
-    featured: true,
-  },
-  {
-    title: "Journally",
+    title: "Angkasa AI",
     description:
-      "A privacy-first digital journaling platform for calm self-reflection.",
-    type: "web",
-    image: "/projects/journally.png",
+      "An AI-assisted trip-planning system. Give it a destination and a trip length, and it produces a full day-by-day itinerary: attractions, travel times between them, hotel/tour contacts, and practical info  by combining a deterministic data pipeline with LLM-driven clustering and generation.",
+    type: ["web"],
+    image: "/projects/angkasa_logo.png",
     tech: [
-      "Next.js 14",
+      "Go",
+      "Python",
+      "FastAPI",
+      "NextJs",
       "TypeScript",
       "TailwindCSS",
       "Prisma",
       "PostgreSQL",
-      "Better Auth",
+      "Claude Haiku",
     ],
-    link: "https://journally-kv.vercel.app/",
+    link: "https://www.drafton.io/",
+    featured: false,
+  },
+  {
+    title: "Rearmoured",
+    description:
+      "Rearmour is a full-stack e-commerce storefront for premium outdoor gear — packs, tents, apparel, and accessories. It comes also with a custom-built admin dashboard for managing products, orders, and customers.",
+    type: ["web"],
+    image: "/projects/rearmoured_logo.png",
+    tech: [
+      "NextJs 16",
+      "TypeScript",
+      "TailwindCSS",
+      "ShadCN",
+      "MongoDB",
+      "Framer Motion",
+      "Zustand",
+      "Stripe",
+    ],
+    link: "https://rearmoured.achmadnp.me",
     featured: true,
   },
   {
-    title: "Velvi Matrimony",
+    title: "Peroot",
     description:
-      "A platform that redefines the way individuals find their life partners.",
-    type: "web",
-    image: "/projects/velvi-matrimony.png",
-    tech: ["NextJs", "TypeScript", "TailwindCSS", "APIs"],
-    link: "https://www.velvimatrimony.in/",
+      "A lightweight Go application that acts as a messaging bridge between your online shop and WhatsApp Business.",
+    type: ["tools"],
+    image: null,
+    tech: ["Go"],
+    link: "https://github.com/achmadnp/peroot",
     featured: false,
   },
   {
-    title: "Drafton",
-    description: "The AI-powered platform that simplifies proposal creation.",
-    type: "web",
-    image: "/projects/drafton.png",
-    tech: ["Open AI", "NextJs", "TypeScript", "TailwindCSS", "Prisma"],
-    link: "https://www.drafton.io/",
-    featured: false,
+    title: "Piegeon",
+    description: "The effortless webhook-to-Telegram forwarder.",
+    type: ["tools"],
+    image: "/projects/piegeon_logo.png",
+    tech: ["Go", "PostgreSQL", "Telegram Bot API"],
+    link: "https://github.com/achmadnp/piegeon",
+    featured: true,
   },
 ];
 
@@ -119,7 +130,6 @@ export function ProjectsSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, i) => {
-              const TypeIcon = typeIcons[project.type];
               return (
                 <motion.div
                   key={project.title}
@@ -131,20 +141,31 @@ export function ProjectsSection() {
                 >
                   <Card className="flex flex-col w-full bg-card hover:-translate-y-2 transition-transform duration-300 border-border group hover:border-primary/50 relative overflow-hidden pt-0">
                     <div className="relative aspect-video w-full overflow-hidden border-b border-border">
-                      <Image
-                        src={project.image}
-                        alt={`${project.title} snapshot`}
-                        fill
-                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        className="object-cover transition-transform duration-300 group-hover:scale-105"
-                      />
+                      {project.image ? (
+                        <Image
+                          src={project.image}
+                          alt={`${project.title} snapshot`}
+                          fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                          className="object-cover transition-transform duration-300 group-hover:scale-105"
+                        />
+                      ) : (
+                        <div className="w-full h-full bg-muted flex items-center justify-center">
+                          <span className="text-muted-foreground">
+                            No image
+                          </span>
+                        </div>
+                      )}
                     </div>
                     <CardHeader>
                       <div className="flex justify-between items-center mb-4">
                         <div className="flex items-center gap-2 text-primary">
-                          <TypeIcon className="h-6 w-6" />
+                          {project.type.map((t) => {
+                            const TypeIcon = typeIcons[t];
+                            return <TypeIcon key={t} className="h-6 w-6" />;
+                          })}
                           <span className="font-mono text-xs text-muted-foreground uppercase tracking-wider">
-                            {project.type}
+                            {project.type.join(" / ")}
                           </span>
                         </div>
                         <div className="flex gap-4">

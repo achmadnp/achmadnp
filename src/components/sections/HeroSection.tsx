@@ -146,7 +146,7 @@ export function HeroSection() {
             variants={item}
             className="shrink-0 flex items-center justify-center"
           >
-            <div className="relative w-72 h-72 sm:w-96 sm:h-96 lg:w-[28rem] lg:h-[28rem] overflow-hidden [mask-image:linear-gradient(to_bottom,black_70%,transparent_100%)]">
+            <div className="relative w-72 h-72 sm:w-96 sm:h-96 lg:w-[28rem] lg:h-[28rem] overflow-hidden [mask-image:radial-gradient(circle,black_40%,transparent_90%)]">
               <Image
                 src="/persphoto.png"
                 alt="Achmad Naufal Prayitno"
