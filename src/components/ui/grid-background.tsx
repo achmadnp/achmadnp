@@ -31,16 +31,19 @@ export function GridBackground() {
       }
     >
       <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, rgba(255,255,255,0.18) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.18) 1px, transparent 1px)",
-          backgroundSize: "40px 40px",
-          WebkitMaskImage:
-            "radial-gradient(220px circle at var(--mouse-x) var(--mouse-y), black 0%, transparent 100%)",
-          maskImage:
-            "radial-gradient(220px circle at var(--mouse-x) var(--mouse-y), black 0%, transparent 100%)",
-        }}
+        className="absolute inset-0 animate-[grid-rainbow_6s_linear_infinite]"
+        style={
+          {
+            "--grid-hue": 0,
+            backgroundImage:
+              "linear-gradient(to right, hsla(var(--grid-hue), 90%, 65%, 0.45) 1px, transparent 1px), linear-gradient(to bottom, hsla(var(--grid-hue), 90%, 65%, 0.45) 1px, transparent 1px)",
+            backgroundSize: "40px 40px",
+            WebkitMaskImage:
+              "radial-gradient(220px circle at var(--mouse-x) var(--mouse-y), black 0%, transparent 100%)",
+            maskImage:
+              "radial-gradient(220px circle at var(--mouse-x) var(--mouse-y), black 0%, transparent 100%)",
+          } as React.CSSProperties
+        }
       />
     </div>
   );
