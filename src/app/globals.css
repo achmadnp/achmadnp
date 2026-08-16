@@ -125,7 +125,7 @@
     background-color: var(--background);
     background-image: linear-gradient(
       to bottom,
-      #792ca2,
+      #00F0FF,
       var(--background) 100vh
     );
     background-repeat: no-repeat;
