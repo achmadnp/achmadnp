@@ -3,6 +3,7 @@
 import * as React from "react";
 import { motion, Variants } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { ResumeDialog } from "@/components/resume-dialog";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
@@ -20,6 +21,7 @@ export function HeroSection() {
   const [displayText, setDisplayText] = React.useState("");
   const [textIndex, setTextIndex] = React.useState(0);
   const [isDeleting, setIsDeleting] = React.useState(false);
+  const [resumeOpen, setResumeOpen] = React.useState(false);
 
   React.useEffect(() => {
     const currentText = ROTATING_TEXTS[textIndex];
@@ -129,8 +131,12 @@ export function HeroSection() {
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/resume">see my resume</Link>
+              <Button
+                size="lg"
+                variant="outline"
+                onClick={() => setResumeOpen(true)}
+              >
+                see my resume
               </Button>
             </motion.div>
           </div>
@@ -153,6 +159,7 @@ export function HeroSection() {
           </motion.div>
         </motion.div>
       </div>
+      <ResumeDialog open={resumeOpen} onOpenChange={setResumeOpen} />
     </section>
   );
 }

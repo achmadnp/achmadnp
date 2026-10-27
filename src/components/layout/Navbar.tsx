@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, Variants } from "framer-motion";
 import { Menu, Github, Mail, FileText, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ResumeDialog } from "@/components/resume-dialog";
 import {
   Sheet,
   SheetContent,
@@ -37,6 +38,7 @@ const menuItem: Variants = {
 export function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false);
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [resumeOpen, setResumeOpen] = React.useState(false);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -77,8 +79,8 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Button variant="outline" asChild>
-              <Link href="/resume">Resume</Link>
+            <Button variant="outline" onClick={() => setResumeOpen(true)}>
+              Resume
             </Button>
           </nav>
 
@@ -126,11 +128,16 @@ export function Navbar() {
                 </motion.nav>
 
                 <SheetFooter className="border-t px-6 py-6 gap-4">
-                  <Button variant="outline" className="w-full" asChild>
-                    <Link href="/resume" onClick={() => setIsMenuOpen(false)}>
-                      <FileText className="mr-2 h-4 w-4" />
-                      Resume
-                    </Link>
+                  <Button
+                    variant="outline"
+                    className="w-full"
+                    onClick={() => {
+                      setIsMenuOpen(false);
+                      setResumeOpen(true);
+                    }}
+                  >
+                    <FileText className="mr-2 h-4 w-4" />
+                    Resume
                   </Button>
                   <div className="flex items-center justify-center gap-6">
                     <a
@@ -156,6 +163,7 @@ export function Navbar() {
           </div>
         </div>
       </div>
+      <ResumeDialog open={resumeOpen} onOpenChange={setResumeOpen} />
     </header>
   );
 }
