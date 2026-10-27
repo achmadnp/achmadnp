@@ -106,7 +106,7 @@ export function AboutSection() {
 
           {/* Bio */}
           <p className="text-muted-foreground text-lg leading-relaxed mb-16 max-w-3xl">
-            I&apos;m a Full-Stack developer who cares about the full picture —
+            I&apos;m a Full-Stack developer who cares about the full picture,
             from a polished, accessible UI down to a well-structured API and a
             reliable deployment pipeline. I enjoy working across the stack,
             bridging design and engineering, and currently expanding into
