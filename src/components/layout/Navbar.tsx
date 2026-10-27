@@ -78,13 +78,7 @@ export function Navbar() {
               </Link>
             ))}
             <Button variant="outline" asChild>
-              <Link
-                href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Resume
-              </Link>
+              <Link href="/resume">Resume</Link>
             </Button>
           </nav>
 
@@ -133,12 +127,7 @@ export function Navbar() {
 
                 <SheetFooter className="border-t px-6 py-6 gap-4">
                   <Button variant="outline" className="w-full" asChild>
-                    <Link
-                      href="/resume.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
+                    <Link href="/resume" onClick={() => setIsMenuOpen(false)}>
                       <FileText className="mr-2 h-4 w-4" />
                       Resume
                     </Link>

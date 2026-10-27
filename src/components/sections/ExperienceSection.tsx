@@ -30,7 +30,7 @@ export function ExperienceSection() {
               <h3 className="text-xl font-semibold text-foreground mb-1">
                 Fullstack Software Engineer intern{" "}
                 <a
-                  href="https://psyconnect.co.in/"
+                  href="#"
                   target="_blank"
                   rel="noreferrer"
                   className="text-primary hover:underline"
