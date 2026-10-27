@@ -124,7 +124,7 @@ export function ProjectsSection() {
         >
           <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-12 flex items-center">
             <span className="text-primary mr-4 font-mono text-xl">03.</span>
-            projects i&apos;ve worked on
+            Projects i&apos;ve worked on
             <div className="ml-6 flex-1 h-px bg-border" />
           </h2>
 
