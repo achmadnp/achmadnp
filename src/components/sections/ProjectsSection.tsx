@@ -70,7 +70,7 @@ const projects: Project[] = [
       "PostgreSQL",
       "Claude Haiku",
     ],
-    link: "https://www.drafton.io/",
+    link: "https://angkasa-eta.vercel.app/",
     featured: false,
   },
   {
