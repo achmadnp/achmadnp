@@ -130,11 +130,7 @@ export function HeroSection() {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <Link
-                  href="/resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <Link href="/resume" target="_blank" rel="noopener noreferrer">
                   see my resume
                 </Link>
               </Button>
