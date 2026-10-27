@@ -130,9 +130,7 @@ export function HeroSection() {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <Link href="/resume" target="_blank" rel="noopener noreferrer">
-                  see my resume
-                </Link>
+                <Link href="/resume">see my resume</Link>
               </Button>
             </motion.div>
           </div>
