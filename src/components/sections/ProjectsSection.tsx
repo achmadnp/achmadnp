@@ -35,7 +35,8 @@ type Project = {
 const projects: Project[] = [
   {
     title: "Chameleon",
-    description: "An All-in-one Local Media Shapeshifter",
+    description:
+      "An All-in-one Local Media Shapeshifter. Chameleon is a desktop application that allows users to convert, compress, and manage their local media files (images, videos, and audio) with ease. It supports a wide range of formats and provides a user-friendly interface for batch processing.",
     type: ["desktop"],
     image: "/projects/chamelleon_logo.png",
     tech: [
